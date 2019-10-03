@@ -1,0 +1,30 @@
+*PEST COEFFICIENTS: WHEAT
+! TANSPOT - Willingthon Pavan  
+!
+! COEFF   DEFINITIONS
+! =====   ===========
+! PESTID# Code for the disease used on FileX (PESID under Management section)
+! PSTNAME Pest description
+! MDSP    Max Daily Spore Production. !!!!!editavel
+! SPE     Spore Production Efficiency - a set of values used in a trapezoid function based on cohort age (Min, Opt1, Opt2, Max) 
+! SCF     Sporulation Crowding Factors - a set of values based on the population density 
+! MSCD    Maximun Spore Clouds Density editable...
+! ASR     Attainable Spore Rate - !!!!!Proportion of spores produced able to infect (**** Verificar DF)
+! SPO2P   Spore Proportion that moves from Organ cloud to Plant cloud 
+! SPP2F   Spore Proportion that moves from Plant cloud to Field cloud 
+! CCFPO   Cloud compartimentalization (days till leave the system - die/remove) (Field, Plant, Organ)
+! II      Initial Inoculum  !!editavel 
+! AFII    Accumulate Favorability for release of the starting inoculum based on temperature favorability set (#acumulateFavorability) editable
+! TFS     Temperature Favorability Set - cardinal temperatures used to calculate the temperature favorability in the infection period (maximum, minimum and optimal) (#temperatureFavorabilitySet)
+! IE      Infection Efficiency (#infectionEfficiency)
+! DF      Dispersion Frequency - Proportion of spores (#dispersionFreequency) 
+! IPS     Initial Pustule Size (#initialPustuleSize)
+! LP      Latent Period - Number of biological days based on TFS (Temperature Favorability Set) (#latentPeriod)
+! IP      Infection Period - Number of biological days based on TFS (Temperature Favorability Set) (#infectionPeriod) editable 
+! WT      Wetness Threshold - Minimal number of hours necessary with free water available for infection (#wetnessThreshold) editable 
+! HF      Host Factor - Resistance factor for the disease by host (0-1; 1 no resistant; 0 resistant) (#hostFactor)
+! IGF     Invisible Growth Function - Function that will be evaluated during the latent period (including parameter values) (#invisibleGrowthFunction)
+! VGF     Visible Growth Function - Function that will be evaluated during the latent period (including parameter values) (#visibleGrowthFunction)
+! 
+@PESTID#  PSTNAME.............  MDSP         SPE                       SCF  MSCD  ASR  SPO2P  SPP2F  CCFPO  II  AFII      TFS   IE    DF      IPS  LP  IP  WT  HF  IGF.......................... VGF.....................................
+   WH001  Tan Spot              3000  7,15,15,20  0.98669,10.71894,0.93374  1500  0.1   0.25   0.45  3,6,9  30    25  30,2,15  0.7  0.15  0.00001   6  20  18   1  0.036*(1.0104-exp(-0.3125*x)) 0.0161858*exp(-exp(1.563509-0.441721*x))

@@ -1,0 +1,79 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+div.outer {
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Customize fonts */
+
+h1, h2, h3, h4,h5,h6 { font-weight: 200;left: 50px;padding-left: 15px; }
+
+#controls {
+  /* Appearance */
+  padding-top: 41px;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+}
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+/* Position and style citation */
+#cite {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* 5px rounded corners */
+  max-width: auto;
+  margin: 0 auto;
+  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
+}
+div.logos {
+   position: relative;
+   margin-top: 50px;
+   margin-bottom:25px;
+}
+.img {
+	margin-top:4px;
+  	margin-right: 1px;
+  	margin-bottom:4px;;
+}
+.responsive {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+.responsive2 {
+  width: 100%;
+ // max-width: 650px;
+  height: auto;
+}
+div.formula {
+  text-align: center;
+}
+/* If not using map tiles, show a white background */
+/*.leaflet-container {*/
+/*  background-color: white !important;
+/*}
+
+

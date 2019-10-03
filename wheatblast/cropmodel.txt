@@ -1,0 +1,1 @@
+The Decision Support System for Agrotechnology Transfer (DSSAT) is a software application program that comprises crop simulation models for over 42 crops. The model used is NWheat coupled with a generic model disease.
